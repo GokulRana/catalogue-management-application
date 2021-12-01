@@ -65,7 +65,7 @@ const Products = () => {
                   onChange={(e) =>
                     dispatch({
                       type: "SEARCH_BY_QUERY",
-                      payload: e.target.value,
+                      payload: e.target.value.toLowerCase(),
                     })
                   }
                 />
